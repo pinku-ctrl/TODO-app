@@ -13,7 +13,7 @@ A[APP] -- create --> B((frontend))
 A[APP] -- create --> C((backend))
 C --> D(Express)
 C --> E(zod for validation)
-C --> H(mongoose for connection)
+C --> G(mongoose for connection)
 C --> H(mongoDB as DB)
 B --> F{React}
 ```
