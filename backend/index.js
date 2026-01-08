@@ -4,11 +4,13 @@ const mongoose = require('mongoose')
 const {schema1} = require('./types.js')
 const {schema2} = require('./types.js')
 const {todo} = require('./db.js')
+const cors = require('cors')
 // const bodyParser = require('body-parser')
 
 // app.use(bodyParser.json())
 
 app.use(express.json());
+app.use(cors());
 
 app.post('/todo', async (req, res) => {
     const createPayload = req.body;
